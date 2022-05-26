@@ -33,6 +33,7 @@ nav{
          right: 5%;
          top: 50%;
          transform: translate(-5%, -50%);
+         z-index: 1000;
      }
 
     .navmenu{
@@ -41,25 +42,25 @@ nav{
         height: 100%;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 90% -10%);
+        clip-path: circle(10px at 90% -10%);
         -webkit-lip-path: circle(100px at 90% -10%);
         transition: all 1s ease-out;
     }
-    .navmenu.active{
+    .navmenu.open{
         clip-path: circle(1000px at 90% -10%);
         -webkit-lip-path: circle(1000px at 90% -10%);
     }
-    .burger.active.line:nth-child(2){
+    .burger.is-active:nth-child(2){
         opacity: 0;
     }
-    .burger.active.line:nth-child(1){
+    .burger.is-active:nth-child(1){
         transform: translateY(8px) rotate(45deg);
 
     }
-    .burger.active.line:nth-child(3){
+    .burger.is-active:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
 
     }
-
+   
 
 }
