@@ -22,3 +22,9 @@ burger.addEventListener('click', function(){
 document.getElementById('user').addEventListener('focus', function(event){
     event.target.style.background = 'green';
 })
+
+let ul=document.querySelector('.ul-list');
+
+let lielement = document.createElement('li');
+lielement.textContent='javascript';
+ul.appendChild(lielement);
